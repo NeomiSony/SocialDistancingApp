@@ -57,6 +57,13 @@ The final App is developed on Node-RED and visualized on the Node-RED Dashboard.
 We have an alert message that warns us of people in close proximity from the device that’s connected to our device through bluetooth and the distance of the person near you. A link to a chatbot for Covid-19 related queries is also provided where it takes you to the chatbot earlier created on Watson Assistant and gives results according to the questions asked.
 For further visualization of the crowd we can choose analyse which takes us to a page with images of the locations and by dragging the image url to the box and choosing analyse it gives us a table of all the objects detected in the image. If person is one of the classes detected we get the message saying too crowded.
 
+![notif](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/notif.png?raw=true)
+
+![analyse](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/analyse.png?raw=true)
+
+
+![chatbot](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/chatbot.png?raw=true)
+
 ## URL of our Project
 https://node-red-qnayt-2020-09-25.eu-gb.mybluemix.net/ui/#!/0?socketid=caLZd27NBn95bWY9AAAs 
 
@@ -67,18 +74,30 @@ https://youtu.be/WBizira81SM
 The working along with screenshots from our project are given below-
 ### •	Proximity alert (Bluetooth)- 
 For this feature we require Watson IOT Platform for detecting any close by devices. When bluetooth is turned on, the phone uses radio waves to figure out which other devices are nearby and the connected device information is sent as MQTT to Watson IOT platform. We use information from the Arogya Setu App to check if the connected device is that of a Covid positive patient and an immediate beep alert is sent to the user to warn them which is done with the help of Node-RED.
+
+![iot](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/iot.png?raw=true)
  
 ### •	Chatbot- 
 The queries related to Covid can be asked by users on the Node-RED Dashboard URL provided or the Mobile Application with the help of Watson Assistant which is another Watson service available on the Cloud. It uses a Chatbot, also called Assistant to leverage industry leading AI capabilities to understand questions that the customers ask in natural language and uses machine learning models that are custom built from the data entered to deliver accurate answers in real time.
 
+
+![assist](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/assist.png?raw=true)
+
 ### •	Crowd Assessment(Location Based)- 
 The CCTV footages of various locations are accessed and using the Watson Visual Recognition API we can perform image processing on the data obtained to determine the number of people at that location. Thus when a user decides to go out he/she can search for the location he/she wants to visit and get a clear idea of the crowd at that area. This will help him choose a different location with less people or go to the preferred location at a different time. GPS tracking can also be used as an additional feature for checking crowd at an area where CCTV is not available. The previous location preferences searched by the user can be stored on a Cloudant database to be accessed by Node-RED so that we can provide a more faster and user friendly method to perform searches.
+
+
+![visual](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/visual.png?raw=true)
  
 ### •	Node-RED Implementation- 
 All the code required for our app is built using the nodes provided on Node-RED. The Visual recognition, Watson Assistant and Cloudant services were connected to Node-RED and used later. HTML and JavaScript were also used for the webpages and for some of the functions defined.
 
-
 The below screenshots has the complete Node-RED code of our App.
+
+![node1](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/node1.png?raw=true)
+
+
+![node2](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/node2.png?raw=true)
 
 ## Conclusion:
 As the Covid-19 situation kept worsening, countries around the world enforced strict lockdowns to combat the spread of the virus. However, lockdowns have a grave impact on a country's economy and extended lockdowns are not a viable option for the long term. Thus it is important  that we learn to live with the virus by following social distancing norms and mining proper hygiene. The features of the app inculcate various technologies and AI help with maintaining social distancing. The app can be used to predict the risk of infection in a particular area, send alerts when someone stands less than 6m radius when required, book slots of a particular store that has a limitation on the number of people allowed to enter at once. A chatbot is also available to ensure that any doubts or FAQs regarding this situation is addressed. The app, if used by many people, has the chance to help in reducing spread of the virus in a post lockdown world.
