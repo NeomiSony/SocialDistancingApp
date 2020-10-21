@@ -87,7 +87,7 @@ The queries related to Covid can be asked by users on the Node-RED Dashboard URL
 The CCTV footages of various locations are accessed and using the Watson Visual Recognition API we can perform image processing on the data obtained to determine the number of people at that location. Thus when a user decides to go out he/she can search for the location he/she wants to visit and get a clear idea of the crowd at that area. This will help him choose a different location with less people or go to the preferred location at a different time. GPS tracking can also be used as an additional feature for checking crowd at an area where CCTV is not available. The previous location preferences searched by the user can be stored on a Cloudant database to be accessed by Node-RED so that we can provide a more faster and user friendly method to perform searches.
 
 
-![visual](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/visual.png?raw=true)
+![visual](https://github.com/NeomiSony/SocialDistancingApp/blob/main/Socialapppics/visuaise.png?raw=true)
  
 ### •	Node-RED Implementation- 
 All the code required for our app is built using the nodes provided on Node-RED. The Visual recognition, Watson Assistant and Cloudant services were connected to Node-RED and used later. HTML and JavaScript were also used for the webpages and for some of the functions defined.
