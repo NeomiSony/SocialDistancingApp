@@ -34,7 +34,7 @@ One way to avoid unnecessary crowding is by proactively detecting mounting traff
 
 ## General Description
 
-![architecture](diag.png)
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
  The solution is developed entirely on IBM Cloud using various Watson APIs namely Watson Assistant, Watson IOT platform and Watson Visual Recognition along with Node-RED. A database on Cloudant is required for storing the historical data of search location preferences and also the run time data. Node Red is a low-code development environment used for wiring the Watson and Cloudant components together. And finally we use the built in dashboard nodes that come with Node-RED to perform analysis on the data procured and give the crowd assessment at a particular location, alert beep of Covid positive patients nearby and a Chatbot for asking queries. This dashboard can be accessed by any user with the URL provided to access the Web Application or can be hosted as a Mobile Application for easier accessibility and use of the product.
  
  ## Technology Stack
